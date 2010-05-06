@@ -10,7 +10,7 @@ namespace :schedule do
                       :city => 'Detroit',
                       :state => 'MI',
                       :zip => '48226',
-                      :url => 'http://www.rubymi.org')
+                      :url => 'http://www.goodeats.com')
     
       
       ##########################################################################
@@ -41,38 +41,50 @@ namespace :schedule do
       ##########################################################################
       puts 'Creating users...'
       User.destroy_all
-      user1 = User.create(:first_name=>'Admin',
+      user1 = User.new({:first_name=>'Admin',
                           :last_name=>'User',
-                          :email => '',
+                          :email => 'test1@test.com',
                           :login => 'admin',
                           :phone_cell => '',
                           :phone_home => '',
-                          :preferred_contact => '')
+                          :preferred_contact => '',
+                          :password => '12345678',
+                          :password_confirmation => '12345678'})
+      user1.save
       
-      user2 = User.create(:first_name=>'Manager',
+      user2 = User.new({:first_name=>'Manager',
                           :last_name=>'User',
-                          :email => '',
+                          :email => 'test2@test.com',
                           :login => 'manager1',
                           :phone_cell => '',
                           :phone_home => '',
-                          :preferred_contact => '')
+                          :preferred_contact => '',
+                          :password => '12345678',
+                          :password_confirmation => '12345678'})
+     user2.save
       
-      user3 = User.create(:first_name=>'Manager2',
+      user3 = User.new({:first_name=>'Manager2',
                           :last_name=>'User',
-                          :email => '',
+                          :email => 'test3@test.com',
                           :login => 'manager2',
                           :phone_cell => '',
                           :phone_home => '',
-                          :preferred_contact => '')
+                          :preferred_contact => '',
+                          :password => '12345678',
+                          :password_confirmation => '12345678'})
+      user3.save
       
       (1..12).each do |num|
-        user = User.create(:first_name=>"User#{num}",
+        user = User.new({:first_name=>"User#{num}",
                             :last_name=>'User',
-                            :email => '',
+                            :email => "test#{(3+num).to_s}@test.com",
                             :login => "user#{num}",
                             :phone_cell => '',
                             :phone_home => '',
-                            :preferred_contact => '')
+                            :preferred_contact => '',
+                            :password => '12345678',
+                            :password_confirmation => '12345678'})
+        user.save
       end
 
 
