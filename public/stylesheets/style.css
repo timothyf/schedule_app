@@ -1,0 +1,18 @@
+label {
+	font-weight: bold;
+	width: 80px;
+	display: block;
+	float: left;
+}
+
+.form_field {
+	float: left;
+	clear: both;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form_buttons {
+	float: left;
+	clear: both;
+}

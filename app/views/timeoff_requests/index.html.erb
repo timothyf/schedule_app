@@ -1,0 +1,18 @@
+<h1>Listing timeoff_requests</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @timeoff_requests.each do |timeoff_request| %>
+  <tr>
+    <td><%= link_to 'Show', timeoff_request %></td>
+    <td><%= link_to 'Edit', edit_timeoff_request_path(timeoff_request) %></td>
+    <td><%= link_to 'Destroy', timeoff_request, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New timeoff_request', new_timeoff_request_path %>

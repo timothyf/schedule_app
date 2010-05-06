@@ -1,0 +1,204 @@
+<html>
+<head>
+	<style>
+		table tr td {
+			border: 1px solid black;
+			width: 80px;
+			height: 40px; 
+		}
+		
+		table thead th {
+			border: 1px solid black;
+			width: 80px;
+			height: 30px; 
+		}
+		
+		.slot a {
+			width: 100%;
+			height: 40px;
+		}
+		
+		.slot a:hover {
+			background-color: blue;
+		}
+		
+		.unavailable {
+			background-color: gray;
+		}
+	</style>
+	
+	<script>
+		function create_shift(id, day) {
+			alert('create ' + id + ' ' + day);
+		}
+	</script>
+</head>
+
+<body>
+	
+	<table cellspacing="0" cellpadding="0">
+		<thead border="1px">
+			<th>Employee</th>
+			<th>Sunday</th>
+			<th>Monday</th>
+			<th>Tuesday</th>
+			<th>Wednesday</th>
+			<th>Thursday</th>
+			<th>Friday</th>
+			<th>Saturday</th>
+		</thead>
+		<tr>
+			<td>John Doe</td>
+			<td><div class="slot"><a href="javascript:create_shift(1, 1);">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="javascript:create_shift(1, 2);">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="javascript:create_shift(1, 3);">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="javascript:create_shift(1, 4);">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="javascript:create_shift(1, 5);">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="javascript:create_shift(1, 6);">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="javascript:create_shift(1, 7);">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Bill Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot unavailable"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot unavailable"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot unavailable"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Mary Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>John Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Bill Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Mary Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>John Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Bill Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Mary Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>John Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Bill Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Mary Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>John Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Bill Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+		<tr>
+			<td>Mary Doe</td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+			<td><div class="slot"><a href="">&nbsp;</a></div></td>
+		</tr>
+	</table>
+	
+</body>
+
+</html>

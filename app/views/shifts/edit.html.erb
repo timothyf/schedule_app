@@ -1,0 +1,12 @@
+<h1>Editing shift</h1>
+
+<% form_for(@shift) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @shift %> |
+<%= link_to 'Back', shifts_path %>

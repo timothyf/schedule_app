@@ -1,0 +1,18 @@
+<h1>Listing employees</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @employees.each do |employee| %>
+  <tr>
+    <td><%= link_to 'Show', employee %></td>
+    <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+    <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New employee', new_employee_path %>

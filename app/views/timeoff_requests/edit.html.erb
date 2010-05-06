@@ -1,0 +1,12 @@
+<h1>Editing timeoff_request</h1>
+
+<% form_for(@timeoff_request) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @timeoff_request %> |
+<%= link_to 'Back', timeoff_requests_path %>

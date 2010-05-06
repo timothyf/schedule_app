@@ -1,0 +1,12 @@
+<h1>Editing employee_role</h1>
+
+<% form_for(@employee_role) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @employee_role %> |
+<%= link_to 'Back', employee_roles_path %>

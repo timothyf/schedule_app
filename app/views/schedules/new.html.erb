@@ -1,0 +1,113 @@
+<%= stylesheet_link_tag 'schedule' %>
+
+	<script type="text/javascript">
+	    dojo.require("dijit.form.Button");
+	    dojo.require("dijit.Dialog");
+	    dojo.require("dijit.form.TextBox");
+	</script>
+
+<div id="sched_head">
+	<div id="sched_type"><b>Schedule Type:</b><br/>Kitchen</div>
+	<div id="sched_date"><b>For dates:</b><br/>3/14/2010 - 3/21/2010</div>
+</div>
+<table cellspacing="0" cellpadding="0">
+	<thead border="1px">
+		<th>Employee</th>
+		<th>Sunday</th>
+		<th>Monday</th>
+		<th>Tuesday</th>
+		<th>Wednesday</th>
+		<th>Thursday</th>
+		<th>Friday</th>
+		<th>Saturday</th>
+	</thead>
+	<tr>
+		<td>John Doe</td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 2);"><div class="slot" id="slot_1_2">
+			<div class="shift" id="shift_1_2">
+				<span class="start_time">10:00am</span>
+				<span class="end_time">3pm</span>
+			</div>
+		</div></a></td>
+		<td><a href="javascript:create_shift(1, 3);"><div class="slot" id="slot_1_3"></div></a></td>
+		<td><a href="javascript:create_shift(1, 4);"><div class="slot" id="slot_1_4"></div></a></td>
+		<td><a href="javascript:create_shift(1, 5);"><div class="slot" id="slot_1_5"></div></a></td>
+		<td><a href="javascript:create_shift(1, 6);"><div class="slot" id="slot_1_6"></div></a></td>
+		<td><a href="javascript:create_shift(1, 7);"><div class="slot" id="slot_1_7"></div></a></td>
+	</tr>
+	<tr>
+		<td>Bill Doe</td>
+		<td><a href="javascript:create_shift(2, 1);"><div class="slot" id="slot_2_1"></div></a></td>
+		<td><a href="javascript:create_shift(2, 2);"><div class="slot" id="slot_2_2"></div></a></td>
+		<td><a href="javascript:create_shift(2, 3);"><div class="slot" id="slot_2_3"></div></a></td>
+		<td><a href="javascript:create_shift(2, 4);"><div class="slot" id="slot_2_4"></div></a></td>
+		<td><a href="javascript:create_shift(2, 5);"><div class="slot" id="slot_2_5"></div></a></td>
+		<td><a href="javascript:create_shift(2, 6);"><div class="slot" id="slot_2_6"></div></a></td>
+		<td><a href="javascript:create_shift(2, 7);"><div class="slot" id="slot_2_7"></div></a></td>
+	</tr>
+	<tr>
+		<td>Mary Doe</td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+	</tr>
+	<tr>
+		<td>John Doe</td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+	</tr>
+	<tr>
+		<td>Bill Doe</td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+	</tr>
+	<tr>
+		<td>Mary Doe</td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+	</tr>
+	<tr>
+		<td>John Doe</td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+	</tr>
+	<tr>
+		<td>Bill Doe</td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+		<td><a href="javascript:create_shift(1, 1);"><div class="slot"></div></a></td>
+	</tr>
+</table>
+
+<div dojoType="dijit.Dialog" id="shift_dlg" title="Create Shift">
+	<%= render :partial => 'shift_form' %>
+</div>

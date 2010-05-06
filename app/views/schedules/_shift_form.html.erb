@@ -1,0 +1,25 @@
+
+<form id="shift_form">
+	<div class="form_field">
+		<label>Shift for:</label>
+		<span>John Doe</span>
+	</div>
+	<div class="form_field">
+		<label>Position:</label>
+	</div>
+	<div class="form_field">
+		<label>Start Time:</label>
+		<input dojoType="dijit.form.TimeTextBox" type="text" value="T15:00:00" name="start_time" id="start_time" />
+	</div>
+	<div class="form_field">
+		<label>End Time:</label>
+		<input dojoType="dijit.form.TimeTextBox" type="text" value="T15:00:00" name="end_time" id="end_time" />
+	</div>
+	<div class="form_buttons">
+		<button dojoType="dijit.form.Button" id="shift_submit_btn">Submit</button>
+	    <button dojoType="dijit.form.Button" id="shift_cancel_btn" onClick="dijit.byId('shift_dlg').hide();">
+	        Cancel
+	    </button>
+	</div>
+	<div style="clear:both;"></div>
+</form>

@@ -1,0 +1,12 @@
+<h1>Editing shift_trade</h1>
+
+<% form_for(@shift_trade) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @shift_trade %> |
+<%= link_to 'Back', shift_trades_path %>

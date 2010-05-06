@@ -1,0 +1,11 @@
+<h1>New employee_position</h1>
+
+<% form_for(@employee_position) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', employee_positions_path %>

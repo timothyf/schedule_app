@@ -1,0 +1,12 @@
+<h1>Editing employee_position</h1>
+
+<% form_for(@employee_position) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @employee_position %> |
+<%= link_to 'Back', employee_positions_path %>

@@ -1,0 +1,61 @@
+table {
+    float: left;
+    clear: both;
+}
+
+table tr td {
+    border: 1px solid black;
+    width: 80px;
+    height: 40px;
+}
+
+table thead th {
+    border: 1px solid black;
+    width: 80px;
+    height: 30px;
+}
+
+.slot {
+    width: 80px;
+    height: 40px;
+	color: blue;
+	text-align: center;
+	font-size: 10pt;
+}
+
+a:hover .slot {
+	color: white;
+    background-color: blue;
+}
+
+.unavailable {
+    background-color: gray;
+}
+
+#sched_head {
+    float: left;
+    width: 100%;
+}
+
+#sched_type {
+    float: left;
+    width: 400px;
+}
+
+#sched_date {
+    float: left;
+    width: 400px;
+}
+
+table a {
+	text-decoration: none;
+}
+
+.shift span {
+	display:block;
+}
+
+.shift span.start_time {
+	border-bottom: 1px solid gray;
+	padding-bottom: 4px;
+}

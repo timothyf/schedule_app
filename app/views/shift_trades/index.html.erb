@@ -1,0 +1,18 @@
+<h1>Listing shift_trades</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @shift_trades.each do |shift_trade| %>
+  <tr>
+    <td><%= link_to 'Show', shift_trade %></td>
+    <td><%= link_to 'Edit', edit_shift_trade_path(shift_trade) %></td>
+    <td><%= link_to 'Destroy', shift_trade, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New shift_trade', new_shift_trade_path %>

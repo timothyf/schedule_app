@@ -1,0 +1,2 @@
+module ShiftTradesHelper
+end

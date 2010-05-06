@@ -1,0 +1,12 @@
+<h1>Editing position_threshold</h1>
+
+<% form_for(@position_threshold) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @position_threshold %> |
+<%= link_to 'Back', position_thresholds_path %>
